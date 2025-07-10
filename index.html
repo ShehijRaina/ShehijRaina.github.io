@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <title>Portfolio - Shehij Raina</title>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="favicon_io/site.webmanifest">
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        Hello World
-    </body>
+        <title>Portfolio | Shehij Raina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Shehij Raina's Portfolio Website."/>
+		<meta name="keywords" content=""/>
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" type="text/css"/></noscript>
+	</head>
+
+		
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div> <!-- Set background image... -->
+			<div id="main">
+
+				<!-- HEADER -->
+					<header id="header">
+						<h1>Shehij Raina</h1>
+						<p>Computer Science Graduate &nbsp;&bull;&nbsp; University of Bath</p>
+						<nav>
+							<ul>
+								<li><a href="mailto:shehijraina@gmail.com"                              class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/shehij-raina/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ShehijRaina"            target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="Resume - Shehij Raina.pdf"    download        class="icon solid fa-file"><span class="label">CV</span></a></li>
+
+							</ul>
+						</nav>
+					</header>
+
+
+				<!-- FOOTER -->
+					<footer id="footer">
+						<span class="copyright">&copy;Shehij Raina. <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">More Information</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+
+		<!-- SCRIPTS -->
+		<script>
+			window.onload              = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove         = function() { return false;                                 }
+			window.onorientationchange = function() { document.body.scrollTop = 0;                  }
+		</script>
+	</body>
 </html>
