@@ -26,7 +26,16 @@
 						<p>Computer Science Graduate &nbsp;&bull;&nbsp; University of Bath</p>
 						<nav>
 							<ul>
-								<li><a href="mailto:shehijraina@gmail.com"                              class="icon solid fa-envelope" title="Email"></a></li>
+								<li id="email"></li>
+								<!-- Make it slightly harder for email harvesters to scrape my address from this website -->
+								<script>
+								const user = "shehijraina";
+								const domain = "gmail.com";
+								document.getElementById("email").innerHTML = `<a href="mailto:${user}@${domain}" class="icon solid fa-envelope" title="Email"></a>`;
+								</script>
+
+
+								
 								<li><a href="https://www.linkedin.com/in/shehij-raina/" target="_blank" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
 								<li><a href="https://github.com/ShehijRaina"            target="_blank" class="icon brands fa-github" title="GitHub"></a></li>
 								<li><a href="Resume - Shehij Raina.pdf"    download        class="icon solid fa-file" title="CV/Resume"></a></li>
